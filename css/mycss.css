@@ -6,9 +6,8 @@ body{
 	font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
 }
 header{
-	background:#81D4FA;
 	width:100%;
-	height:60px;
+	height:50px;
 }
 
 
@@ -18,3 +17,4 @@ footer{
 	height:100px;
 	width:100%;
 }
+
