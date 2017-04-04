@@ -19,14 +19,19 @@ header
 
 body
 {
-  border-left-style: solid;
+  /*border-left-style: solid;
   border-left-width: medium;
-  border-left-color: rgb(0, 53, 102);
+  border-left-color: rgb(0, 53, 102);*/
 
   padding: 0;
   margin: 0px;
   background-color: rgb(255, 255, 255);
   overflow-x: hidden;
+}
+
+.content
+{
+  margin: 20px;
 }
 
 footer

@@ -9,19 +9,102 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/maincss.css">
+    <link rel="stylesheet" type="text/css" href="css/leftMenucss.css">
 
   </head>
-  <body>
-    <!-- header -->
-    <header>
-      <div class="intro">
+  <body id="wrapper">
 
+      <!-- sidebar-wrapper -->
+      <div id="sidebar-wrapper" >
+          <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+              <a href="#">
+                  Start Bootstrap
+              </a>
+            </li>
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a href="#">Shortcuts</a>
+            </li>
+            <li>
+                <a href="#">Overview</a>
+            </li>
+            <li>
+                <a href="#">Events</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+          </ul>
       </div>
-    </header>
+      <!-- /#sidebar-wrapper -->
 
-    <footer>
+      <!-- page-content-wrapper -->
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- header -->
+            <header>
+              <!-- Into bar with login & search -->
+              <div class="intro">
+                <h1 style="margin-top:auto">My intro</h1>
+              </div>
+              <!-- /Into bar with login & search -->
 
-    </footer>
+              <!-- Show/Hide Menu Button & Nav Bar -->
+              <div style="height:30">
+                <!-- Show/Hide Menu Button -->
+                <div style="float:left; position:relative; left:0; top:0;">
+                  <button type="button" class="btn btn-default" id="menu-toggle" style="padding:0px 6px;min-width:22px;height:22px;margin-top:auto"><span class="button-label">></span></button>
+                </div>
+
+                <!-- Navigation -->
+                <div class="nav" style="margin-left:20px;">
+                    asdfasfa
+                    asfgdfhg
+                    asdfgfdh
+                    ádfgh
+                </div>
+              </div>
+              <!-- /Navigation -->
+
+            </header>
+            <!-- /#header -->
+
+            <!-- content -->
+            <div class="content" style="margin-top:30px;">
+              <h1>My header</h1>
+              <p>
+              </p>
+              <p>
+              </p>
+            </div>
+            <!-- /#content -->
+
+            <!-- footer -->
+            <footer class="footer">
+              <p>
+                1412592 - Võ Hiếu Trung<br/>
+                vhieutrung@outlook.com - 0911101120
+              </p>
+              <p>
+                1412689 - Hoàng Thị Bích Vân<br/>
+              </p>
+            </footer>
+            <!-- /#footer -->
+
+          </div>
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
 
 
     <!-- jQuery -->
@@ -32,6 +115,70 @@
 
 <!-- Custom JavaScript -->
 <script src="js/myjs.js"></script>
+
+<!-- Menu Toggle Script -->
+ <script>
+ $("#menu-toggle").click(function(e) {
+   <!-- Change status -->
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+
+   <!-- Change button text -->
+   if ($('#menu-toggle > .button-label').text() == '>')
+     $('#menu-toggle > .button-label').text('<');
+   else
+     $('#menu-toggle > .button-label').text('>');
+ });
+
+ <!-- Auto Toggle Script -->
+ function isBreakpoint( alias ) {
+     return $('.device-' + alias).is(':visible');
+ }
+
+ if( isBreakpoint('xs') )
+ {
+   if ($('#menu-toggle > .button-label').text() == '<')
+     document.getElementById('menu-toggle').click();
+ }
+
+ if( isBreakpoint('md') )
+ {
+   if ($('#menu-toggle > .button-label').text() == '>')
+     document.getElementById('menu-toggle').click();
+ }
+
+ var waitForFinalEvent=function(){var b={};return function(c,d,a){a||(a="I am a banana!");b[a]&&clearTimeout(b[a]);b[a]=setTimeout(c,d)}}();
+ var fullDateString = new Date();
+
+ $(window).resize(function () {
+   waitForFinalEvent(function(){
+
+     if( isBreakpoint('xs') )
+     {
+       if ($(window).width() < 768)
+       {
+           if ($('#menu-toggle > .button-label').text() == '<')
+           {
+             document.getElementById('menu-toggle').click();
+           }
+       }
+     }
+     else
+     {
+       if ($(window).width() > 768)
+       {
+         if ($('#menu-toggle > .button-label').text() == '>')
+         {
+           document.getElementById('menu-toggle').click();
+         }
+       }
+     }
+
+   }, 300, fullDateString.getTime())
+ });
+ <!-- /Auto Toggle Script -->
+
+ </script>
 
   </body>
 </html>
