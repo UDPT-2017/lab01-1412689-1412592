@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>1412592-1412689</title>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/maincss.css">
+    <link rel="stylesheet" type="text/css" href="css/leftMenucss.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+
+  </head>
+  <div class="device-xs visible-xs"></div>
+  <div class="device-sm visible-sm"></div>
+  <div class="device-md visible-md"></div>
+  <div class="device-lg visible-lg"></div>
+  <body id="wrapper">
+
+      <!-- sidebar-wrapper -->
+      <div id="sidebar-wrapper" >
+          <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+              <a href="#">
+                  Start Bootstrap
+              </a>
+            </li>
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a href="#">Shortcuts</a>
+            </li>
+            <li>
+                <a href="#">Overview</a>
+            </li>
+            <li>
+                <a href="#">Events</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+          </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- page-content-wrapper -->
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- header -->
+            <header>
+              <!-- Into bar with login & search -->
+              <div class="intro">
+                <h1 style="margin-top:auto">My intro</h1>
+              </div>
+              <!-- /Into bar with login & search -->
+
+              <!-- Show/Hide Menu Button & Nav Bar -->
+              <div style="height:30">
+                <!-- Show/Hide Menu Button -->
+                <div style="float:left; position:relative; left:0; top:0;">
+                  <button type="button" class="btn btn-default mybutton" id="menu-toggle" style="padding:15px 6px;min-width:22px;margin-top:auto; color:#fff; background:rgba(51, 93, 133,1);"><span class="button-label">></span></button>
+                </div>
+
+                <!-- Navigation -->
+                <div class="nav" style="margin-left:22px;">
+                    <nav class="navbar navbar-inverse">
+                      <div class="container-fluid">
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                          <a class="navbar-brand" href="#"></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                          <ul class="nav navbar-nav">
+                            <li class="active" style="background-color: rgba(51, 93, 133,1);"><a href="#">Home</a></li>
+                            <li><a href="#">Albums</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                          </ul>
+
+                        </div>
+                      </div>
+                    </nav>
+                </div>
+              </div>
+              <!-- /Navigation -->
+
+            </header>
+            <!-- /#header -->
+
+            <!-- content -->
+            <div class="content">
+              <h1>My header</h1>
+              <p>
+                first paragrap
+              </p>
+              <p>
+                second paragrap
+              </p>
+            </div>
+            <!-- /#content -->
+
+            <!-- footer -->
+            <footer class="footer">
+              <p>
+                1412592 - Võ Hiếu Trung<br/>
+                vhieutrung@outlook.com - 0911101120
+              </p>
+              <p>
+                1412689 - Hoàng Thị Bích Vân<br/>
+
+              </p>
+            </footer>
+            <!-- /#footer -->
+
+          </div>
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+
+
+    <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="js/myjs.js"></script>
+
+  <!-- Menu Toggle Script -->
+   <script>
+   $("#menu-toggle").click(function(e) {
+     <!-- Change status -->
+     e.preventDefault();
+     $("#wrapper").toggleClass("toggled");
+
+     <!-- Change button text -->
+     if ($('#menu-toggle > .button-label').text() == '>')
+       $('#menu-toggle > .button-label').text('<');
+     else
+       $('#menu-toggle > .button-label').text('>');
+   });
+
+   <!-- Auto Toggle Script -->
+   function isBreakpoint( alias ) {
+       return $('.device-' + alias).is(':visible');
+   }
+
+   if( isBreakpoint('xs') )
+   {
+     if ($('#menu-toggle > .button-label').text() == '<')
+       document.getElementById('menu-toggle').click();
+   }
+
+   if( isBreakpoint('md') )
+   {
+     if ($('#menu-toggle > .button-label').text() == '>')
+       document.getElementById('menu-toggle').click();
+   }
+
+   var waitForFinalEvent=function(){var b={};return function(c,d,a){a||(a="I am a banana!");b[a]&&clearTimeout(b[a]);b[a]=setTimeout(c,d)}}();
+   var fullDateString = new Date();
+
+   $(window).resize(function () {
+     waitForFinalEvent(function(){
+
+       if( isBreakpoint('xs') )
+       {
+         if ($(window).width() < 768)
+         {
+             if ($('#menu-toggle > .button-label').text() == '<')
+             {
+               document.getElementById('menu-toggle').click();
+             }
+         }
+       }
+       else
+       {
+         if ($(window).width() > 768)
+         {
+           if ($('#menu-toggle > .button-label').text() == '>')
+           {
+             document.getElementById('menu-toggle').click();
+           }
+         }
+       }
+
+     }, 300, fullDateString.getTime())
+   });
+   <!-- /Auto Toggle Script -->
+
+   </script>
+
+  </body>
+</html>
