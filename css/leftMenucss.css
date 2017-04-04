@@ -1,3 +1,8 @@
+.mybutton{
+	border-radius:0px;
+	border:none;
+}
+
 #wrapper
 {
     padding-left: 0;
