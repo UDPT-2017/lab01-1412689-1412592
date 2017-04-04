@@ -10,6 +10,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/maincss.css">
     <link rel="stylesheet" type="text/css" href="css/leftMenucss.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
 
   </head>
   <div class="device-xs visible-xs"></div>
@@ -67,15 +68,32 @@
               <div style="height:30">
                 <!-- Show/Hide Menu Button -->
                 <div style="float:left; position:relative; left:0; top:0;">
-                  <button type="button" class="btn btn-default" id="menu-toggle" style="padding:0px 6px;min-width:22px;height:22px;margin-top:auto"><span class="button-label">></span></button>
+                  <button type="button" class="btn btn-default mybutton" id="menu-toggle" style="padding:15px 6px;min-width:22px;margin-top:auto"><span class="button-label">></span></button>
                 </div>
 
                 <!-- Navigation -->
-                <div class="nav" style="margin-left:20px;">
-                    asdfasfa
-                    asfgdfhg
-                    asdfgfdh
-                    ádfgh
+                <div class="nav" style="margin-left:22px;">
+                    <nav class="navbar navbar-inverse">
+                      <div class="container-fluid">
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                          </button>
+                          <a class="navbar-brand" href="#"></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                          <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Albums</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                          </ul>
+                    
+                        </div>
+                      </div>
+                    </nav>
                 </div>
               </div>
               <!-- /Navigation -->
@@ -84,7 +102,7 @@
             <!-- /#header -->
 
             <!-- content -->
-            <div class="content" style="margin-top:30px;">
+            <div class="content">
               <h1>My header</h1>
               <p>
                 first paragrap
