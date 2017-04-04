@@ -10,11 +10,16 @@ body{
 	margin-bottom:0px;
 	height:50px;
 	border:none;
-	
+	background: rgba(0, 53, 102,1);
 }
 
 .navbar{
 	border-radius:0px;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover
+{
+	background-color: rgba(51, 93, 133,1);
+
 }
 
 
