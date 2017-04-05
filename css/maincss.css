@@ -32,21 +32,30 @@ body
   margin: 0px;
   background-color: rgb(255, 255, 255);
   overflow-x: hidden;
+  display:block;
 }
 
 .content{
   margin: 20px;
+  height:auto;
+  
+}
+.container{
+	min-height:360px;
 }
 
-footer
-{
-  padding: 20px;
-  margin-top: 20px;
-  clear: both;
-  width: 100%;
-  background-color: rgb(0, 119, 179);
-  text
-  position: relative;
+footer{
+	 clear: both;
+	 padding: 20px;
+	 margin-top: 20px;
+	 width: 100%;
+	 background-color: rgb(0, 119, 179);
+	 margin-bottom:0px;
+	 position:relative;
+	 min-width:1000px;
+	 overflow:hidden;
+	 bottom:0px;
+	 z-index:9999999;
   /*overflow-x: hidden;*/
 }
 footer p

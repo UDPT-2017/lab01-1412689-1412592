@@ -5,12 +5,13 @@
     <meta charset="utf-8">
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="css/maincss.css">
-    <link rel="stylesheet" type="text/css" href="css/leftMenucss.css">
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/maincss.css">
+    <link rel="stylesheet" type="text/css" href="../css/leftMenucss.css">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/content.css">
 
   </head>
   <div class="device-xs visible-xs"></div>
@@ -24,30 +25,28 @@
           <ul class="sidebar-nav">
             <li class="sidebar-brand">
               <a href="#">
-                  Start Bootstrap
+                  ALBUMS
               </a>
             </li>
             <li>
-                <a href="#">Dashboard</a>
+                <a href="#">Album Thiên Nhiên</a>
             </li>
             <li>
-                <a href="#">Shortcuts</a>
+                <a href="#">Album Động Vật</a>
             </li>
             <li>
-                <a href="#">Overview</a>
+                <a href="#">Album Nhạc Cụ</a>
             </li>
             <li>
-                <a href="#">Events</a>
+                <a href="#">Album Xe Đẹp</a>
             </li>
             <li>
-                <a href="#">About</a>
+                <a href="#">Album ChiPhi</a>
             </li>
             <li>
-                <a href="#">Services</a>
+                <a href="#">Album Công Nghệ</a>
             </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
+           
           </ul>
       </div>
       <!-- /#sidebar-wrapper -->
@@ -68,7 +67,9 @@
               <div style="height:30">
                 <!-- Show/Hide Menu Button -->
                 <div style="float:left; position:relative; left:0; top:0;">
-                  <button type="button" class="btn btn-default mybutton" id="menu-toggle" style="padding:15px 6px;min-width:22px;margin-top:auto; color:#fff; background:rgba(51, 93, 133,1);"><span class="button-label">></span></button>
+                  <button type="button" class="btn btn-default mybutton" id="menu-toggle">
+                  	<span class="button-label">></span>
+                  </button>
                 </div>
 
                 <!-- Navigation -->
@@ -85,8 +86,8 @@
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                           <ul class="nav navbar-nav">
-                            <li class="active" style="background-color: rgba(51, 93, 133,1);"><a href="#">Home</a></li>
-                            <li><a href="#">Albums</a></li>
+                            <li><a href="../index.html">Home</a></li>
+                            <li class="active"><a href="#">Albums</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Blog</a></li>
                           </ul>
@@ -102,15 +103,87 @@
             <!-- /#header -->
 
             <!-- content -->
-            <div class="content">
-              <h1>My header</h1>
-              <p>
-                first paragrap
-              </p>
-              <p>
-                second paragrap
-              </p>
+            <div class="container">
+              <h1>Albums</h1>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                  	<h3>Album Thiên Nhiên</h3>
+                    <a href="#" target="_blank">
+                      <img src="images/TN1.jpg" alt="Thiên Nhiên" style="width:100%">
+                    </a>
+                    <div class="poster-view">
+                    	<p>Poster</p>
+                    	<p><span class="glyphicon glyphicon-eye-open"></span></p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                  	<h3>Album Động Vật</h3>
+                    <a href="#" target="_blank">
+                      <img src="images/DV1.jpg" alt="Động Vật" style="width:100%"> 
+                    </a>
+					<div class="poster-view">
+                    	<p>Poster</p>
+                    	<p><span class="glyphicon glyphicon-eye-open"></span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                  	<h3>Album Nhạc Cụ</h3>
+                    <a href="#" target="_blank">
+                      <img src="images/NC1.jpg" alt="Nhạc Cụ" style="width:100%">
+                    </a>
+                    <div class="poster-view">
+                    	<p>Poster</p>
+                    	<p><span class="glyphicon glyphicon-eye-open"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div><br>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                  <h3>Album Xe Đẹp</h3>
+                    <a href="#" target="_blank">
+                      <img src="images/XD1.jpg" alt="Xe Đẹp" style="width:100%">
+                    </a>
+                    <div class="poster-view">
+                    	<p>Poster</p>
+                    	<p><span class="glyphicon glyphicon-eye-open"></span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                  <h3>Album ChiPi</h3>
+                    <a href="#" target="_blank">
+                      <img src="images/CP1.jpg" alt="ChiPi" style="width:100%">
+                    </a>
+                    <div class="poster-view">
+                    	<p>Poster</p>
+                    	<p><span class="glyphicon glyphicon-eye-open"></span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                  <h3>Album Công Nghệ</h3>
+                    <a href="#" target="_blank">
+                      <img src="images/CN1.jpg" alt="Công Nghệ" style="width:100%">
+                    </a>
+                    <div class="poster-view">
+                    	<p>Poster</p>
+                    	<p><span class="glyphicon glyphicon-eye-open"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div><br><br>
             </div>
+            
             <!-- /#content -->
 
             <!-- footer -->
@@ -133,13 +206,13 @@
 
 
     <!-- jQuery -->
-  <script src="js/jquery.js"></script>
+  <script src="../js/jquery.js"></script>
 
   <!-- Bootstrap Core JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
 
   <!-- Custom JavaScript -->
-  <script src="js/myjs.js"></script>
+  <script src="../js/myjs.js"></script>
 
   <!-- Menu Toggle Script -->
    <script>

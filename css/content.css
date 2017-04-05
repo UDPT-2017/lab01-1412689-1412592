@@ -1,0 +1,16 @@
+.thumbnail h3{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+/*.poster-view p{
+	float:left;
+}*/
+.poster-view p{
+	width:175px;
+	margin:0px;
+}
+.poster-view li{
+	list-style:none;
+	float:left;
+}

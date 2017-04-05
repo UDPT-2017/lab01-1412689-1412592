@@ -5,6 +5,7 @@ body{
 	background:#EBEBEB;
 	font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
 }
+
 .navbar,
 .navbar-inverse{
 	margin-bottom:0px;
@@ -20,8 +21,22 @@ body{
 .navbar{
 	border-radius:0px;
 }
-footer p{
-	color:#FFF;
+#myNavbar{
+	z-index:9999999;
+	background-color:rgb(0, 53, 102);
+	border-color:transparent;
+	position:relative;
+	
+}
+.col-md-4{
+	position:inherit;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+	background-color:rgb(51, 93, 133);
+}
+
+.active{
+	background-color: rgba(51, 93, 133,1);
 }
 
 /*footer{
@@ -31,3 +46,4 @@ footer p{
 	width:100%;
 }
 */
+
