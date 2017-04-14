@@ -4,27 +4,52 @@ module.exports = function(app, passport) {
 var express  = require('express');
 
 app.use(express.static('views'));
+app.set("view engine", "ejs")
 app.use('/components',express.static('bower_components'));
+
+app.get('/', function(req, res) {
+
+	// render the page and pass in any flash data if it exists
+	res.render("index");
+});
 	// =====================================
 	// HOME PAGE (with login links) ========
 	// =====================================
 	/*app.get('/', function(req, res) {
 		res.render('index.ejs'); // load the index.ejs file
-	});
+	});*/
 
 
 	//albums
 	app.get('/albums', function(req, res) {
-		res.render('albums.ejs'); // load the index.ejs file
+		res.render('albums'); // load the index.ejs file
+	});
+	app.get('/albums1', function(req, res) {
+		res.render('albums1'); // load the index.ejs file
+	});
+	app.get('/albums2', function(req, res) {
+		res.render('albums3'); // load the index.ejs file
+	});
+	app.get('/albums3', function(req, res) {
+		res.render('albums3'); // load the index.ejs file
+	});
+	app.get('/albums4', function(req, res) {
+		res.render('albums4'); // load the index.ejs file
+	});
+	app.get('/albums5', function(req, res) {
+		res.render('albums5'); // load the index.ejs file
+	});
+	app.get('/albums6', function(req, res) {
+		res.render('albums6'); // load the index.ejs file
 	});
 	//albums
 	app.get('/about', function(req, res) {
-		res.render('about.ejs'); // load the index.ejs file
+		res.render('about'); // load the index.ejs file
 	});
 	//albums
-	app.get('/blog', function(req, res) {
-		res.render('blogs.ejs'); // load the index.ejs file
-	}); */
+	app.get('/blogs', function(req, res) {
+		res.render('blogs'); // load the index.ejs file
+	}); 
 	// =====================================
 	// LOGIN ===============================
 	// =====================================
@@ -32,7 +57,7 @@ app.use('/components',express.static('bower_components'));
 	app.get('/login', function(req, res) {
 
 		// render the page and pass in any flash data if it exists
-		res.render('login.ejs', { message: req.flash('loginMessage') });
+		res.render("login", { message: req.flash('loginMessage') });
 	});
 
 	// process the login form
@@ -58,7 +83,7 @@ app.use('/components',express.static('bower_components'));
 	// show the signup form
 	app.get('/signup', function(req, res) {
 		// render the page and pass in any flash data if it exists
-		res.render('signup.ejs', { message: req.flash('signupMessage') });
+		res.render('signup', { message: req.flash('signupMessage') });
 	});
 
 	// process the signup form

@@ -3,7 +3,7 @@
 **Name of your app** là một bài tập 1 tại môn UDPT.
 
 Thành viên:
-* [ ] **1412689** Hoàng Thị Bích Vân (1412689)
+* [x] **1412689** Hoàng Thị Bích Vân (1412689)
 * [ ] **MSSV2** Tên sinh viên 2 (tên tài khoản github)
 
 URL: **http://localhost:3500**
@@ -24,7 +24,7 @@ Yêu cầu **bắt buộc**
 * [ ] Left menu sẽ ẩn đi khi kích thước màn hình nhỏ hơn 768px và có nút nhấn để hiển thị lại left menu. (**MSSV**)
 * [x] Trang web được thiết kế sẽ bao gồm các trang: home, albums, about, blog. (**MSSV**)
 * [x] Khi nhấn vào trang albums sẽ thấy danh sách các album đã được lưu trữ trong hệ thống. Mỗi album bao gồm: ảnh cover, tên người tạo, tổng số view của các tấm ảnh trong album. (**1412689**)
-* [ ] Khi nhấn vào từng album sẽ sẽ chuyển sang danh sách các tấm ảnh trong album. Mỗi tấm ảnh hiển thị các thông tin: người đăng, số lượng view và tấm ảnh dưới dạng thumbnail. (**MSSV**)
+* [X] Khi nhấn vào từng album sẽ sẽ chuyển sang danh sách các tấm ảnh trong album. Mỗi tấm ảnh hiển thị các thông tin: người đăng, số lượng view và tấm ảnh dưới dạng thumbnail. (**1412689**)
 * [ ] Vào trang about sẽ thấy thông tin nhóm: tên nhóm, danh sách thành viên (mã sinh viên, họ tên, ảnh đại diện) và bản đồ google map hiển thị địa chỉ liên lạc của nhóm. (**MSSV**)
 * [ ] Vào trang blog sẽ thấy danh sách các bài viết, mỗi bài viết bao gồm: nội dung rút gọn, ảnh đại diện, người đăng và số view. (**MSSV**)
 * [ ] Nhấn vào mỗi bài viết sẽ thấy chi tiết bài viết cùng đầy đủ nội dung của bài viết. (**MSSV**)
