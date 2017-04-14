@@ -91,10 +91,25 @@
                             <li class="active"><a href="#">About</a></li>
                             <li><a href="blogs">Blog</a></li>
                           </ul>
+                          <% if(!user){ %>
                           <ul class="nav navbar-nav navbar-right">
                             <li><a href="/signup" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                             <li><a href="/login" class="btn btn-default"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                           </ul>
+                          <%} else{ %>
+                            <!-- Ví dụ chỉ hiện thông tin user, còn m muốn làm nhiều hơn thì kiếm dropdown -->
+
+
+                            <ul class="nav navbar-nav navbar-right">
+                              <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span class="glyphicon glyphicon-user"> <%= user.username %></button>
+
+                                <ul class="dropdown-menu">
+                                  <li><a href="/logout">logout</a></li>
+                                </ul>
+                              </div>
+                            </ul>
+                            <%}%>
                         </div>
                       </div>
                     </nav>

@@ -109,7 +109,10 @@ module.exports = function(passport) {
           //cho thang user name vao giua
           pool.query("SELECT * FROM user_table WHERE username = '" + username + "'", function(err, rows){
                 if (err)
+                {
+                   console.log('err');
                     return done(err);
+                  }
                 // loi o day thi phai
                 console.log(rows.rows.length);
                 if (rows.rows.length == 0) {
@@ -120,7 +123,7 @@ module.exports = function(passport) {
                 console.log(rows.rows[0]);
                 if (!bcrypt.compareSync(password, rows.rows[0].password))
                     return done(null, false, req.flash('loginMessage', 'Oops! Wrong password.')); // create the loginMessage and save it to session as flashdata
-
+                console.log('here');
                 // all is well, return successful user
                 return done(null, rows.rows[0]);
             });
