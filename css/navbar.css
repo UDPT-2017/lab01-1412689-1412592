@@ -30,3 +30,8 @@ body{
 	width:100%;
 }
 */
+.navbar-toggle
+{
+		border-radius:0px;
+		border-color: rgb(0, 119, 179);
+}
