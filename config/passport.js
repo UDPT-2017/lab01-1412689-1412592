@@ -12,8 +12,8 @@ var bcrypt = require('bcrypt-nodejs');
 
 var config = {
   user: 'postgres', //env var: PGUSER
-  database: 'users', //env var: PGDATABASE
-  password: '24081995', //env var: PGPASSWORD
+  database: 'users', //cái này tức là tên của database đã tạo
+  password: '24081995', //password database
   host: 'localhost', // Server hosting the postgres database
   port: 5432, //env var: PGPORT
   max: 10, // max number of clients in the pool
@@ -97,16 +97,7 @@ module.exports = function(passport) {
             passwordField : 'password',
             passReqToCallback : true // allows us to pass back the entire request to the callback
         },
-        function(req, username, password, done) { // callback with email and password from our form
-          //use the client for executing the query
-          //loi query o day, len pgadmin de check xem cu phap
-          //ma hash: $2a$10$S7Pvx0PmKsTSyB7i43mC8.0CZfTrQ1XFT64YnNwe34XFM8MxuWqLq
-          //=> bt la: 123456
-          //ta can phai nho la hoi nay no ko nhan "" => lam cach nao de chung ta select chuan?
-          //=> querry truoc torng con voi
-          //copy het vao cai query
-          //cho nao can thay the ta dung " de chan dau`
-          //cho thang user name vao giua
+        function(req, username, password, done) {
           pool.query("SELECT * FROM user_table WHERE username = '" + username + "'", function(err, rows){
                 if (err)
                 {
