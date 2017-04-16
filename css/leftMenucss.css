@@ -14,7 +14,7 @@
 
 #wrapper.toggled
 {
-    padding-left: 175px;
+    padding-left: 160px;
 }
 
 #sidebar-wrapper
@@ -22,10 +22,10 @@
     overflow-x:hidden;
     z-index: 1000;
     position: fixed;
-    left: 175px;
+    left: 160px;
     width: 0;
     height: 100%;
-    margin-left: -175px;
+    margin-left: -160px;
     overflow-y: auto;
     background: rgba(0, 53, 102,1);
     border-left-style: solid;
@@ -40,7 +40,7 @@
 #wrapper.toggled #sidebar-wrapper
 {
   overflow-x:hidden;
-  width: 175px;
+  width: 160px;
   border-left-style: solid;
   border-left-width: medium;
   border-left-color: rgb(0, 53, 102);
@@ -56,7 +56,7 @@
 #wrapper.toggled #page-content-wrapper
 {
     position: relative;
-    margin-right: -175px;
+    margin-right: -160px;
     margin-left: 0px;
 }
 
@@ -66,7 +66,7 @@
 {
     position: absolute;
     top: 0;
-    width: 175px;
+    width: 170px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -116,7 +116,7 @@
     background: none;
 }
 
-@media(min-width:768px)
+@media(min-width:810px)
 {
     #wrapper {
         padding-left: 0;
@@ -124,7 +124,7 @@
 
     #wrapper.toggled
     {
-        padding-left: 175px;
+        padding-left: 160px;
     }
 
     #sidebar-wrapper {
@@ -138,7 +138,7 @@
     #wrapper.toggled #sidebar-wrapper
     {
         overflow-x:hidden;
-        width: 175px;
+        width: 160px;
         border-left-style: solid;
         border-left-width: medium;
         border-left-color: rgb(0, 53, 102);
