@@ -20,38 +20,32 @@
   <div class="device-lg visible-lg"></div>
   <body id="wrapper">
 
-      <!-- sidebar-wrapper -->
-      <div id="sidebar-wrapper" >
-          <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-              <a href="#">
-                  Start Bootstrap
-              </a>
-            </li>
-            <li>
-                <a href="#">Dashboard</a>
-            </li>
-            <li>
-                <a href="#">Shortcuts</a>
-            </li>
-            <li>
-                <a href="#">Overview</a>
-            </li>
-            <li>
-                <a href="#">Events</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-          </ul>
-      </div>
-      <!-- /#sidebar-wrapper -->
+    <!-- sidebar-wrapper -->
+    <div id="sidebar-wrapper" >
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand">
+            <div class="collapsed navbar-toggle" data-toggle = "collapse" aria-expanded = "false" style="v margin: 0px;width:150px; height:60px;">
+              <img src="images/logo.png" alt="Logo" height="60" width="55">
+            </div>
+          </li>
+          <li class="sidebar-brand"style="position:relative; left:-10px;">
+            <a href="#">
+                Thành Viên
+            </a>
+          </li>
+          <li>
+              <a href="https://www.facebook.com/groups/156355068208194/">Nhóm Lớp</a>
+          </li>
+          <li>
+              <a href="https://www.facebook.com/VoHieuTrung.Hau">Võ Hiếu Trung</a>
+          </li>
+          <li>
+              <a href="https://www.facebook.com/bichvan.hoang.95?fref=ts">Hoàng Thị Bich Vân</a>
+          </li>
+
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
 
       <!-- page-content-wrapper -->
       <div id="page-content-wrapper">
@@ -61,8 +55,12 @@
             <header>
               <!-- Into bar with login & search -->
               <div class="intro">
-                <h1 style="margin-top:auto">My intro</h1>
-              </div>
+                <div class="jumbotron intro">
+                  <div class="collapse navbar-collapse" style="float:left;">
+                    <img src="images/logo.png" alt="Logo" height="60" width="55" style="float:left;">
+                  </div>
+                  <h1 >Ứng Dụng Phân Tán</h1>
+                </div>              </div>
               <!-- /Into bar with login & search -->
 
               <!-- Show/Hide Menu Button & Nav Bar -->
@@ -122,13 +120,62 @@
 
             <!-- content -->
             <div class="container">
-              <h1>ABOUT</h1>
-              <p>
-                first paragrap
-              </p>
-              <p>
-                second paragrap
-              </p>
+              <h1>About</h1>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <h3>Nhóm Lớp<br>Ứng Dụng Phân Tán</h3>
+                    <a href="aboutda" target="_blank">
+                      <img class="img-thumbnail" src="/images/distributedNetwork.jpg" alt="Nhóm Lớp - Ứng Dụng Phân Tán" style="width:100%">
+                    </a>
+                    <div>
+                      <div class="count">
+                        <em><i class="glyphicon glyphicon-eye-open">""</i></em>
+                      </div>
+                     <a href="https://www.facebook.com/VoHieuTrung.Hau" style="width: 32px; height: 32px">
+                       <img src="http://icons.iconarchive.com/icons/sicons/flat-shadow-social/256/facebook-icon.png" alt="1412592 - Võ Hiếu Trung" style="float:left;"> </img>
+                     </a>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <h3>1412592<br>Võ Hiếu Trung</h3>
+                    <a href="https://www.facebook.com/VoHieuTrung.Hau" target="_blank">
+                      <img class="img-thumbnail" src="/images/1412592.jpg" alt="1412592 - Võ Hiếu Trung" style="width:100%">
+                    </a>
+                    <div>
+                      <div class="count">
+                        <em><i class="glyphicon glyphicon-eye-open">""</i></em>
+                      </div>
+                     <a href="https://www.facebook.com/VoHieuTrung.Hau" style="width: 32px; height: 32px">
+                       <img src="http://icons.iconarchive.com/icons/sicons/flat-shadow-social/256/facebook-icon.png" alt="1412592 - Võ Hiếu Trung" style="float:left;"> </img>
+                     </a>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <h3>1412689<br>Hoàng Thị Bích Vân</h3>
+                    <a href="https://www.facebook.com/bichvan.hoang.95?fref=ts" target="_blank">
+                      <img class="img-thumbnail" src="/images/1412689.jpg" alt="1412689 - Hoàng Thị Bích Vân" style="width:100%">
+                    </a>
+                    <div>
+                      <div class="count">
+                        <em><i class="glyphicon glyphicon-eye-open">""</i></em>
+                      </div>
+                     <a href="https://www.facebook.com/bichvan.hoang.95?fref=ts" style="width: 32px; height: 32px">
+                       <img src="http://icons.iconarchive.com/icons/sicons/flat-shadow-social/256/facebook-icon.png" alt="1412689 - Hoàng Thị Bích Vân" style="float:left;"> </img>
+                     </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- /#content -->
 
@@ -179,17 +226,6 @@
        return $('.device-' + alias).is(':visible');
    }
 
-   if( isBreakpoint('xs') )
-   {
-     if ($('#menu-toggle > .button-label').text() == '<')
-       document.getElementById('menu-toggle').click();
-   }
-
-   if( isBreakpoint('md') )
-   {
-     if ($('#menu-toggle > .button-label').text() == '>')
-       document.getElementById('menu-toggle').click();
-   }
 
    var waitForFinalEvent=function(){var b={};return function(c,d,a){a||(a="I am a banana!");b[a]&&clearTimeout(b[a]);b[a]=setTimeout(c,d)}}();
    var fullDateString = new Date();
@@ -197,22 +233,45 @@
    $(window).resize(function () {
      waitForFinalEvent(function(){
 
-       if( isBreakpoint('xs') )
-       {
-         if ($(window).width() < 768)
-         {
-             if ($('#menu-toggle > .button-label').text() == '<')
-             {
+       if( isBreakpoint('lg') ){
+         if ($(window).width() < 855){
+            if ($('#menu-toggle > .button-label').text() == '<'){
                document.getElementById('menu-toggle').click();
              }
+         }else{
+           if ($('#menu-toggle > .button-label').text() == '>'){
+             document.getElementById('menu-toggle').click();
+           }
          }
        }
-       else
-       {
-         if ($(window).width() > 768)
-         {
-           if ($('#menu-toggle > .button-label').text() == '>')
-           {
+      else if( isBreakpoint('md')){
+        if ($(window).width() < 855){
+            if ($('#menu-toggle > .button-label').text() == '<'){
+              document.getElementById('menu-toggle').click();
+            }
+        }else{
+          if ($('#menu-toggle > .button-label').text() == '>'){
+            document.getElementById('menu-toggle').click();
+          }
+        }
+      }
+      else if( isBreakpoint('sm') ){
+        if ($(window).width() < 855){
+           if ($('#menu-toggle > .button-label').text() == '<'){
+             document.getElementById('menu-toggle').click();
+           }
+         }else{
+           if ($('#menu-toggle > .button-label').text() == '>'){
+             document.getElementById('menu-toggle').click();
+           }
+         }
+      }else if( isBreakpoint('xs') ){
+         if ($(window).width() < 855){
+           if ($('#menu-toggle > .button-label').text() == '<'){
+             document.getElementById('menu-toggle').click();
+           }
+         }else{
+           if ($('#menu-toggle > .button-label').text() == '>'){
              document.getElementById('menu-toggle').click();
            }
          }
