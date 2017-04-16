@@ -6,7 +6,7 @@ Thành viên:
 * [x] **1412689** Hoàng Thị Bích Vân (1412689)
 * [x] **1412592** Võ Hiếu Trung (VHTrung)
 
-URL: **http://localhost:3500**
+URL: **https://lab01-1412689-1412592.herokuapp.com/**
 
 ## Yêu cầu
 
